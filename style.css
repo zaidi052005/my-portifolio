@@ -1,0 +1,88 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ececec;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007acc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin: 40px 0;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Dark mode styles */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark header,
+body.dark footer {
+  background-color: #1e1e1e;
+}
+
+body.dark .card {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark nav a {
+  color: #82cfff;
+}
